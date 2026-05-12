@@ -8,8 +8,9 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "packageManager": "npm@10.9.2",
   "engines": {
-    "node": "20.x"
+    "node": ">=18.18.0"
   },
   "dependencies": {
     "next": "15.3.2",
