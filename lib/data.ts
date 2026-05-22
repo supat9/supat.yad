@@ -25,7 +25,8 @@ export interface Project {
   highlights: string[];
   challenge: string;
   stack: string[];
-  images?: string[]; // optional paths to project images in /public
+  images?: string[];
+  link?: string;
 }
 
 export const PROJECTS: Project[] = [
@@ -121,6 +122,7 @@ export const PROJECTS: Project[] = [
       "Keeping financial state consistent across independent modules — transactions, budgets, savings goals, and debts — required a clean data model in Supabase and careful API design so that each module could aggregate the same transaction data without duplicating logic.",
     stack: ["Next.js 16", "TypeScript", "Supabase", "PostgreSQL", "NextAuth", "Lucide React", "Node.js"],
     images: ["/income-expenses.png", "/income-expenses1.png", "/income-expenses2.png", "/income-expenses3.png", "/income-expenses4.png", "/income-expenses5.png", "/income-expenses6.png", "/income-expenses7.png", "/income-expenses8.png"],
+    link: "https://income-expenses-app.vercel.app/",
   },
   {
     n: "05",
@@ -145,6 +147,7 @@ export const PROJECTS: Project[] = [
       "Keeping each user's portfolio data strictly isolated without relying on Row Level Security meant pushing all data access through server-side API routes that validate the NextAuth session before every query — a deliberate trade-off that kept the security model explicit and auditable.",
     stack: ["Next.js 14", "TypeScript", "Tailwind CSS", "Supabase", "PostgreSQL", "NextAuth.js", "Finnhub API", "Google Gemini", "Vercel"],
     images: ["/portfolio-app1.png", "/portfolio-app2.png", "/portfolio-app3.png", "/portfolio-app4.png", "/portfolio-app5.png", "/portfolio-app6.png", "/portfolio-app7.png"],
+    link: "https://portfolio-app-drab-nu.vercel.app/dashboard",
   },
 ];
 

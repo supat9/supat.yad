@@ -177,6 +177,16 @@ export default function ProjectDetail({
               <button onClick={onClose} className="btn btn--ghost">
                 <span className="arr">←</span> Back to work
               </button>
+              {project.link && (
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn--ghost"
+                >
+                  Live demo <span className="arr">↗</span>
+                </a>
+              )}
               <button onClick={onNext} className="btn btn--primary">
                 Next project <span className="arr">→</span>
               </button>
