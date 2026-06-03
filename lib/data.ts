@@ -154,7 +154,7 @@ export const PROJECTS: Project[] = [
 export const SKILLS = [
   { group: "Languages", items: ["TypeScript", "JavaScript", "SQL", "Python", "Go"] },
   { group: "Frontend", items: ["Next.js", "React.js", "Vue.js", "Tailwind CSS", "Bootstrap"] },
-  { group: "Backend", items: ["Node.js", "Express.js", "GoFiber", "REST API", "Prisma ORM"] },
+  { group: "Backend", items: ["Node.js", "Express.js", "NestJS", "GoFiber", "REST API", "Prisma ORM"] },
   { group: "Database", items: ["PostgreSQL", "MySQL", "Supabase", "MongoDB"] },
   { group: "Tools", items: ["Docker", "Figma", "Git", "Postman", "Vercel"] },
 ];
