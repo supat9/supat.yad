@@ -29,11 +29,11 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Supat Yadav — Full Stack Software Engineer",
   description:
-    "Full Stack Software Engineer based in Bangkok. Proficient in Node.js, React.js, Next.js, and Go — building robust, scalable web applications.",
+    "Full Stack Software Engineer building web applications with React, Next.js, and Go. Experience in API integration, AWS, CI/CD, and AI-powered knowledge retrieval.",
   openGraph: {
     title: "Supat Yadav — Full Stack Software Engineer",
     description:
-      "Full Stack Software Engineer based in Bangkok. Proficient in Node.js, React.js, Next.js, and Go — building robust, scalable web applications.",
+      "Full Stack Software Engineer building web applications with React, Next.js, and Go. Experience in API integration, AWS, CI/CD, and AI-powered knowledge retrieval.",
     type: "website",
   },
 };

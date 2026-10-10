@@ -1,9 +1,9 @@
 import { PROFILE } from "@/lib/data";
 
 const PARAGRAPHS = [
-  "I'm a full-stack software engineer based in Bangkok with a B.Sc. in Information Technology from Kasetsart University. I build robust, scalable web applications across the full stack — from database schema design to responsive front-end interfaces.",
-  "My experience spans Node.js, React.js, Next.js, and Go. I have hands-on production experience from my time at Ngern Hai Jai Co., Ltd., where I worked on fintech features using Next.js and Golang within an Agile team, applying microservices architecture and Domain-Driven Design.",
-  "I'm currently seeking a full-time Software Engineer position where I can contribute my technical skills and grow within a collaborative development team.",
+  "I'm a full-stack software engineer based in Bangkok and a First-Class Honors graduate in Information Technology from Kasetsart University, with a GPA of 3.91. I build web applications with React.js, Next.js, and Go — from frontend interfaces and RESTful APIs to application data and deployment.",
+  "At Atiz Innovation, I work as a Full Stack Developer using Go with Gin, MongoDB, PostgreSQL, and MySQL. My work includes payment gateway and LINE Official Account integrations, project setup, AWS deployment, and CI/CD workflows. I also integrate AI for internal knowledge retrieval, data summarization, and explanation.",
+  "Previously, I worked as a Software Engineer at Ngern Hai Jai, developing production features with Next.js and Go in an Agile team. That experience included microservices, Domain-Driven Design, and collaboration through pull requests and code reviews.",
 ];
 
 export default function About() {
@@ -26,8 +26,8 @@ export default function About() {
             <dl className="aside-dl">
               <dt>Based</dt>
               <dd>{PROFILE.location}</dd>
-              <dt>Status</dt>
-              <dd>{PROFILE.status}</dd>
+              <dt>Focus</dt>
+              <dd>{PROFILE.focus}</dd>
               <dt>Education</dt>
               <dd>{PROFILE.education}</dd>
               <dt>Email</dt>

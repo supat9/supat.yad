@@ -11,9 +11,9 @@ export default function Hero() {
         </h1>
         <div className="hero-foot">
           <p className="hero-lede">
-            Full-stack engineer proficient in Node.js, React.js, Next.js, and Go.
-            Strong background in RESTful API design, user authentication, and
-            responsive interfaces — building software that scales and reads well.
+            Full Stack Software Engineer building web applications with React,
+            Next.js, and Go. Experienced in API integration, AWS deployment,
+            CI/CD workflows, and AI-powered knowledge retrieval and data summarization.
           </p>
           <div className="hero-actions">
             <a href="#work" className="btn btn--primary">

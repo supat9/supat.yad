@@ -4,12 +4,12 @@ export const PROFILE = {
   contact: "supat.yad@gmail.com",
   phone: "098-939-9121",
   location: "Bangkok, Thailand",
-  status: "Open to full-time opportunities",
+  focus: "Full-stack development · Cloud deployment · AI integration",
   languages: "EN · TH",
-  education: "B.Sc. Information Technology · Kasetsart University · GPA 3.91",
+  education: "B.Sc. Information Technology · Kasetsart University · First-Class Honors · GPA 3.91",
   social: [
     { label: "GitHub", handle: "github.com/supat9", href: "https://github.com/supat9" },
-    { label: "LinkedIn", handle: "in/supat", href: "https://www.linkedin.com/in/supat9" },
+    { label: "LinkedIn", handle: "in/supat9", href: "https://www.linkedin.com/in/supat9" },
     { label: "Email", handle: "supat.yad@gmail.com", href: "mailto:supat.yad@gmail.com" },
   ],
 };
@@ -20,10 +20,11 @@ export interface Project {
   title: string;
   kicker: string;
   role: string;
+  category?: "experience";
   summary: string;
   overview: string;
   highlights: string[];
-  challenge: string;
+  challenge?: string;
   stack: string[];
   images?: string[];
   link?: string;
@@ -32,28 +33,47 @@ export interface Project {
 export const PROJECTS: Project[] = [
   {
     n: "01",
-    year: "2025",
+    year: "Jul 2026 – Present",
+    title: "Atiz Innovation Co., Ltd.",
+    kicker: "Professional experience",
+    category: "experience",
+    role: "Full Stack Developer",
+    summary:
+      "Full Stack Developer building web applications with React.js, Next.js, and Go, integrating payment gateways, LINE Official Accounts, and AI capabilities, with AWS deployment and CI/CD workflows.",
+    overview:
+      "Develop and maintain full-stack web applications at Atiz Innovation, connecting frontend interfaces, backend services, and application data. My work includes payment and LINE integrations, project setup, AWS deployment, and AI features that help users find and understand information.",
+    highlights: [
+      "Develop React.js and Next.js frontends and backend services with Go and the Gin framework",
+      "Design and develop RESTful APIs and integrate MongoDB, PostgreSQL, and MySQL",
+      "Integrate payment gateways for online payments and connect applications with LINE Official Accounts",
+      "Set up application projects and deploy to AWS using CI/CD workflows",
+      "Integrate AI for internal knowledge retrieval, data summarization, and explanation",
+    ],
+    stack: ["React.js", "Next.js", "Go", "Gin", "MongoDB", "PostgreSQL", "MySQL", "AWS", "CI/CD", "AI Integration"],
+  },
+  {
+    n: "02",
+    year: "Apr – Jun 2025",
     title: "Ngern Hai Jai Co., Ltd.",
     kicker: "Professional experience",
-    role: "Software Engineer Intern",
+    category: "experience",
+    role: "Software Engineer",
     summary:
-      "Software Engineer Intern at a Bangkok fintech — shipped Next.js and Go features in an Agile team, working across microservices and applying Domain-Driven Design.",
+      "Software Engineer developing production features with Next.js and Go in an Agile team, working with microservices and applying Domain-Driven Design.",
     overview:
-      "At Ngern Hai Jai I joined an Agile engineering team as an intern, building and maintaining production-grade fintech features. I contributed to both the Next.js frontend and Golang backend services, participating in sprint planning, pull request reviews, and the full delivery cycle from requirement discussion through to deployment.",
+      "At Ngern Hai Jai I worked as a Software Engineer, developing and maintaining production features with Next.js and Go. I collaborated with an Agile team on requirement discussions, sprint planning, and iterative delivery through deployment, using Git and GitHub for branching, pull requests, and code reviews.",
     highlights: [
       "Developed and optimised production features using Next.js and Golang",
-      "Collaborated in Agile sprints — planning, delivery, and retrospectives",
+      "Collaborated on requirement discussions, sprint planning, and iterative delivery through deployment",
       "Managed codebase via Git and GitHub: branching, pull requests, code review",
       "Worked with Microservices architecture for scalable, modular backend services",
       "Applied Domain-Driven Design (DDD) to organise business logic",
     ],
-    challenge:
-      "Joining a live production system mid-cycle meant quickly building context on an existing codebase while shipping real features. I focused on reading the system carefully before touching it, and leaned on DDD principles to understand where each piece of logic belonged.",
     stack: ["Next.js", "Go", "GoFiber", "Microservices", "DDD", "Git", "GitHub"],
     images: ["/ngern-hai-jai.png"],
   },
   {
-    n: "02",
+    n: "03",
     year: "2025",
     title: "Borrow-Return System",
     kicker: "Equipment management",
@@ -73,10 +93,10 @@ export const PROJECTS: Project[] = [
     challenge:
       "Modelling the equipment lifecycle cleanly — so that the same item could be in borrow, pending return, and under maintenance simultaneously — required careful state-machine thinking and clear separation between the borrowing and maintenance modules.",
     stack: ["Next.js", "Node.js", "Express.js", "Tailwind CSS", "SQL", "Swagger"],
-    images: ["/Borrow-Return System.png ", "/Borrow-Return System1.png", "/Borrow-Return System2.png", "/Borrow-Return System3.png", "/Borrow-Return System4.png"],
+    images: ["/Borrow-Return System.png", "/Borrow-Return System1.png", "/Borrow-Return System2.png", "/Borrow-Return System3.png", "/Borrow-Return System4.png"],
   },
   {
-    n: "03",
+    n: "04",
     year: "2025",
     title: "Car Repair Booking",
     kicker: "Service booking platform",
@@ -99,7 +119,7 @@ export const PROJECTS: Project[] = [
     images: ["/dlogtech.png", "/dlogtech3.png", "/dlogtech2.png"],
   },
   {
-    n: "04",
+    n: "05",
     year: "2026",
     title: "Ledger — Income & Expenses",
     kicker: "Personal finance app",
@@ -125,7 +145,7 @@ export const PROJECTS: Project[] = [
     link: "https://income-expenses-app.vercel.app/",
   },
   {
-    n: "05",
+    n: "06",
     year: "2026",
     title: "Portfolio Tracker",
     kicker: "Stock portfolio management",
@@ -154,7 +174,8 @@ export const PROJECTS: Project[] = [
 export const SKILLS = [
   { group: "Languages", items: ["TypeScript", "JavaScript", "SQL", "Python", "Go"] },
   { group: "Frontend", items: ["Next.js", "React.js", "Vue.js", "Tailwind CSS", "Bootstrap"] },
-  { group: "Backend", items: ["Node.js", "Express.js", "NestJS", "GoFiber", "REST API", "Prisma ORM"] },
+  { group: "Backend", items: ["Go / Gin", "Node.js", "Express.js", "NestJS", "GoFiber", "RESTful APIs", "Prisma ORM"] },
   { group: "Database", items: ["PostgreSQL", "MySQL", "Supabase", "MongoDB"] },
-  { group: "Tools", items: ["Docker", "Figma", "Git", "Postman", "Vercel"] },
+  { group: "Cloud & Tools", items: ["AWS", "CI/CD", "Docker", "Git", "GitHub", "Postman", "Vercel", "Figma"] },
+  { group: "AI", items: ["AI Integration", "Knowledge Retrieval", "Data Summarization", "Claude Code", "ChatGPT"] },
 ];

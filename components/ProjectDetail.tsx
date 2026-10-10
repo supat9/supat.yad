@@ -64,8 +64,8 @@ export default function ProjectDetail({
               <p className="detail-kicker">{project.kicker}</p>
             </div>
 
-            <div className="detail-figure">
-              {project.images && project.images.length > 0 ? (
+            {project.images && project.images.length > 0 && (
+              <div className="detail-figure">
                 <div style={{ position: "relative" }}>
                   <img
                     src={project.images[imgIndex]}
@@ -121,18 +121,12 @@ export default function ProjectDetail({
                     </>
                   )}
                 </div>
-              ) : (
-                <div className="figure-slot">
-                  <span className="figure-slot-label">
-                    {project.title} — screenshot
-                  </span>
-                </div>
-              )}
-            </div>
+              </div>
+            )}
 
             <div className="detail-meta">
               <div className="dm-cell">
-                <div className="dm-label">Year</div>
+                <div className="dm-label">{project.category === "experience" ? "Period" : "Year"}</div>
                 <div className="dm-value">{project.year}</div>
               </div>
               <div className="dm-cell">
@@ -168,10 +162,12 @@ export default function ProjectDetail({
               </ul>
             </div>
 
-            <div className="detail-section">
-              <div className="ds-label">Challenge</div>
-              <p className="ds-body">{project.challenge}</p>
-            </div>
+            {project.challenge && (
+              <div className="detail-section">
+                <div className="ds-label">Challenge</div>
+                <p className="ds-body">{project.challenge}</p>
+              </div>
+            )}
 
             <div className="detail-foot">
               <button onClick={onClose} className="btn btn--ghost">
@@ -188,7 +184,7 @@ export default function ProjectDetail({
                 </a>
               )}
               <button onClick={onNext} className="btn btn--primary">
-                Next project <span className="arr">→</span>
+                Next item <span className="arr">→</span>
               </button>
             </div>
           </div>
